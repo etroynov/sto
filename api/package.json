@@ -1,0 +1,12 @@
+{
+  "name": "sto-api",
+  "version": "0.0.1",
+  "description": "this service is used for getting some data from api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
