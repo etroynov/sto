@@ -4,14 +4,13 @@
   "description": "this service is used for SSR data for users and seo engine",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "next start -p 8085",
+    "start-dev": "next -p 8085"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^4.2.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "next": "^4.2.1"
   }
 }
