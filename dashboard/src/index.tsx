@@ -3,29 +3,38 @@
  */
 
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { render } from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
-import reduxThunk from 'redux-thunk';
+import { BrowserRouter } from 'react-router-dom';
+import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-import reducers from './reducers';
+import rootReducer from './reducers';
 
 /**
- * Components
+ * Styles
+ */
+
+import './assets/css/antd.min.css';
+import './assets/styl/index.styl';
+
+/**
+ * Root Component
  */
 
 import App from './App';
 
 /**
- * Configuration
+ * Store settings
  */
 
 const store = createStore(
-  reducers,
+  rootReducer,
   composeWithDevTools(
-    applyMiddleware(reduxThunk),
+    applyMiddleware(
+      thunk,
+    ),
   ),
 );
 
@@ -33,7 +42,7 @@ const store = createStore(
  * Expo
  */
 
-ReactDOM.render(
+render(
   <BrowserRouter>
     <Provider store={store}>
       <App />

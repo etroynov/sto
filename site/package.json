@@ -1,16 +1,23 @@
 {
-  "name": "sto-site",
-  "version": "0.0.2",
-  "description": "this service is used for SSR data for users and seo engine",
+  "name": "ucavtor-site",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "next start -p 8085",
-    "start-dev": "next -p 8085"
+    "start-dev-site": "next -p 4000",
+    "start": "next start -p 8083",
+    "build": "next build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^4.2.1"
+    "next": "^4.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-yandex-metrika": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.3"
   }
 }

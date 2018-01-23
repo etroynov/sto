@@ -3,18 +3,15 @@
  */
 
 import { combineReducers } from 'redux';
-import organizations from './organizations';
+import { routerReducer } from 'react-router-redux';
 
-/**
- * Reducers
- */
-
-
+import courses from './courses';
 
 /**
  * Expo
  */
 
 export default combineReducers({
-  organizations,
+  courses,
+  routing: routerReducer,
 });

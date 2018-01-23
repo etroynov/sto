@@ -1,0 +1,13 @@
+{
+  "name": "ucavtor-admin",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev-admin": "../node_modules/parcel-bundler/bin/cli.js -p 2000 ./src/index.html --no-cache",
+    "build": "../node_modules/parcel-bundler/bin/cli.js build ./src/index.html --no-cache --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,8 +1,0 @@
-{
-  "name": "sto-auth",
-  "version": "0.0.1",
-  "description": "this service is for users  authorization, authentication and registration",
-  "main": "index.js",
-  "author": "Evgeniy Troynov <troinov174@gmail.com>",
-  "license": "MIT"
-}
